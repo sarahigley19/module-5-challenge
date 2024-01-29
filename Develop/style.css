@@ -12,6 +12,14 @@ textarea {
   padding: 10px;
 }
 
+header.p-5.mb-4 {
+  text-align: center;
+}
+
+p#currentDay.lead {
+  font-weight: bolder;
+}
+
 .description {
   white-space: pre-wrap;
 }
@@ -56,4 +64,22 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+
+.message {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.success {
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.error {
+  border-color: #f5c6cb;
+  color: #721c24;
 }
