@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const timeBlocks = document.getElementsByClassName("time-block");
     const displayMessaging = document.getElementById("display-messaging");
 
+  //Adjusts time block colors based on past, present or future time
     Array.from(timeBlocks).forEach(function (timeBlock) {
       const hour = parseInt(timeBlock.id.split("-")[1]);
       const dataInput = timeBlock.querySelector(".description");
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+// Displays messaging above calendar
   function displayMessaging(message, messageType) {
     const messageElement = document.createElement("div");
     messageElement.textContent = message;
